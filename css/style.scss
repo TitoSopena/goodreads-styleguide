@@ -1,0 +1,166 @@
+@import 'responsive-nav';
+@import 'mixin';
+@import 'reset';
+
+
+
+// **** Header ***** //
+
+// header {
+// 	position: fixed;
+
+// }
+
+
+h1 {
+	font-size: 4.5em;
+	font-weight: 700;
+	padding-top: 3em;
+	padding-bottom: 1.5em;
+}
+p {
+	font-family: Tahoma, helvetica, sans-serif;
+	font-weight: 350;
+	font-size: 1.3em;
+	line-height: 1.55;
+	text-align: left;
+
+}
+#toc {
+
+	font-family: 'Grand Hotel', helvetica, sans-serif;
+	font-size: 5em;
+	float: left;
+	color: #4C3928;
+
+}
+.nav-toggle {
+	float: right;
+}
+
+#intro { 
+
+	margin-left: 10%;
+}
+
+.color {
+	margin-left: 10%;
+}
+
+.box {
+	float: left;
+	width: 5%;
+    border: 5em solid #67d0f9;
+    margin: 3em;
+    margin-left: 33%;
+
+}
+.box1 {
+	float: left;
+	width: 5%;
+    border: 5em solid #4C3928;
+    margin: 3em;
+    margin-left: 33%;
+}
+.box2 {
+	float: left;
+	width: 5%;
+    border: 5em solid #F28179;
+    margin: 3em;
+    margin-left: 33%;
+}
+.box3 {
+	float: left;
+	width: 5%;
+    border: 5em solid #F6B97C;
+    margin: 3em;
+    margin-left: 33%
+}
+// **** content **** //
+
+
+
+@media screen and (min-width: 500px){
+.box {
+    width: 300px;
+    padding: 25px;
+    border: 25px solid navy;
+    margin: 25px;
+}
+
+.typeface {
+
+	font-family: 'Grand Hotel', helvetica, sans-serif;
+	font-size: 1em;
+}
+
+
+h3 {
+	font-size: 1.5em;
+}
+
+#toc {
+	text-align: center;
+	font-family: 'Grand Hotel', helvetica, sans-serif;
+	color: #4C3928;
+
+}
+
+ul {
+	list-style:none;
+	text-align: center;
+
+}
+
+li {
+	display: inline-block;
+	padding: 0 20px;
+    border-right: 1px solid #000000;
+
+}
+li:last-child {
+
+	border-right: none;
+}
+
+#intro p {
+	width: 40em;
+	word-wrap: break-word;
+	line-height: 1.5em;
+	font-size: 1.1em;
+}
+}
+
+@media screen and (min-width: 651px) {
+#toc {
+	text-align: center;
+	font-family: 'Grand Hotel', helvetica, sans-serif;
+	color: #4C3928;
+
+}
+
+ul {
+	list-style:none;
+	text-align: center;
+
+}
+
+li {
+	display: inline-block;
+	padding: 0 20px;
+    border-right: 1px solid #000000;
+
+}
+li:last-child {
+
+	border-right: none;
+}
+
+#intro p {
+	width: 20em;
+	word-wrap: break-word;
+	line-height: 1.5em;
+	font-size: 1.1em;
+}
+
+}
