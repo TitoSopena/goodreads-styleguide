@@ -3,164 +3,249 @@
 @import 'reset';
 
 
+// ** Global ** //
 
 // **** Header ***** //
 
-// header {
-// 	position: fixed;
+	header {
+	max-width:100%;
+	background: #f28179;
+	padding-top: 1px;
 
-// }
+	h2 {
+	text-align: center;
+	font-family: 'open-sans', helvetica, sans-serif;
+	line-height: 1.5em;
+	letter-spacing: .1em;
+	color: #4C3928;
+	}
+	nav {
+	background: #F28179;
+	width: 100%;
+	margin-left: 5%;
+	}
+	ul {
+		text-align: center;
+	}
 
+
+}
 
 h1 {
-	font-size: 4.5em;
-	font-weight: 700;
-	padding-top: 3em;
-	padding-bottom: 1.5em;
+	font-size: 3.3em;
+	font-family: helvetica, sans-serif;
+	font-weight: 400;
+	margin-bottom: 25px;
+
 }
+h2 {
+	font-size: 2em;
+	font-weight: 200;
+	margin-bottom: 25px;
+}
+
 p {
-	font-family: Tahoma, helvetica, sans-serif;
-	font-weight: 350;
+	font-family: helvetica, sans-serif;
+	font-weight: 100;
 	font-size: 1.3em;
-	line-height: 1.55;
-	text-align: left;
-
+	line-height: 1.5em;
+	padding-bottom: 1em;
+	
 }
+.main-container {
+	max-width: 1400px;
+}
+
 #toc {
-
-	font-family: 'Grand Hotel', helvetica, sans-serif;
+	font-family:'Grand Hotel', helvetica, sans-serif;
 	font-size: 5em;
-	float: left;
+	text-align: center;
 	color: #4C3928;
-
+	margin-top: 50px;
 }
 .nav-toggle {
-	float: right;
+	text-align: center;
 }
 
-#intro { 
+// **** introduction **** //
 
-	margin-left: 10%;
+section {
+	margin-top: 50px;
+}
+
+.intro { 
+
+	width: 60%;
+	margin-left: 20%;
+
+}
+#intro h1 {
+	margin-right: 15%;
+
+}
+// **** color **** //
+.css {
+	margin-bottom: 20px;
+	margin-right: 50%;
+}
+.row-css{
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 100px;
 }
 
 .color {
-	margin-left: 10%;
+	margin-left: 3%;
+
+}
+.colors p {
+	text-align: center;
+}
+
+.big-box p {
+	color: white;
 }
 
 .box {
-	float: left;
+
 	width: 5%;
     border: 5em solid #67d0f9;
     margin: 3em;
-    margin-left: 33%;
-
+    margin-left: 30%;
 }
+
 .box1 {
-	float: left;
+	
 	width: 5%;
     border: 5em solid #4C3928;
     margin: 3em;
-    margin-left: 33%;
+    margin-left: 30%;
+
 }
+
 .box2 {
-	float: left;
 	width: 5%;
     border: 5em solid #F28179;
     margin: 3em;
-    margin-left: 33%;
+    margin-left: 30%;
 }
 .box3 {
-	float: left;
+	
 	width: 5%;
     border: 5em solid #F6B97C;
     margin: 3em;
-    margin-left: 33%
-}
-// **** content **** //
-
-
-
-@media screen and (min-width: 500px){
-.box {
-    width: 300px;
-    padding: 25px;
-    border: 25px solid navy;
-    margin: 25px;
+    margin-left: 30%
 }
 
+
+// **** typography **** //
+.typography {
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 100px;
+}
+.typography h1 {
+	font-size: 3em;
+}
+.type {
+	margin-left: 10%;
+}
 .typeface {
-
 	font-family: 'Grand Hotel', helvetica, sans-serif;
 	font-size: 1em;
 }
 
-
-h3 {
-	font-size: 1.5em;
-}
-
-#toc {
-	text-align: center;
+.typeface p {
 	font-family: 'Grand Hotel', helvetica, sans-serif;
-	color: #4C3928;
+}
+.open-sans {
+	font-family: 'Open Sans', sans-serif;
+}
+// ****Buttons**** //
+.button-container {
+	width: 100%;
+	margin-top: 100px;
+}
+.buttons {
+	border-radius: 1em;
+	width: 60%;
+	background: #67D0F9;
+	border: 5px solid #4C3928;
+
+	p {
+		text-align: center;
+		position: relative;
+		top: 10px;
+		 
+		
+	}
+	
+}
+.buttons:hover {
+	background: #F4A29B;
+}
+
+
+
+
+
+// ****Process**** //
+.process {
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 100px;
+}
+
+.style {
+	width: 100%;
+	border: 5px solid #4C3928;
+}
+.sketch {
+	width: 100%;
+	border: 5px solid #4C3928;
+}
+
+@media screen and (min-width:500px){
+
+	.buttons {
+		width: 30%;
+	}
+
+	
+	nav li {
+		float: left;
+	 	width: 10%;
+      border-bottom: none;
+      height: 50px;
+      line-height: 50px;
+      margin-left: 8.5%;;
+
+	}
+
 
 }
 
-ul {
-	list-style:none;
-	text-align: center;
+@media screen and (min-width:1000px){
+
+
+	nav{
+		display: inline-block;
+	}
+	
+
+	.colors{
+		display: inline-block;
+		margin-left: 38%;
+	}
+	.buttons {
+		width: 30%;
+	}
+
+	.sketch {
+		width: 60%;
+	}
 
 }
 
-li {
-	display: inline-block;
-	padding: 0 20px;
-    border-right: 1px solid #000000;
 
-}
-li:last-child {
 
-	border-right: none;
-}
-
-#intro p {
-	width: 40em;
-	word-wrap: break-word;
-	line-height: 1.5em;
-	font-size: 1.1em;
-}
-}
-
-@media screen and (min-width: 651px) {
-#toc {
-	text-align: center;
-	font-family: 'Grand Hotel', helvetica, sans-serif;
-	color: #4C3928;
-
-}
-
-ul {
-	list-style:none;
-	text-align: center;
-
-}
-
-li {
-	display: inline-block;
-	padding: 0 20px;
-    border-right: 1px solid #000000;
-
-}
-li:last-child {
-
-	border-right: none;
-}
-
-#intro p {
-	width: 20em;
-	word-wrap: break-word;
-	line-height: 1.5em;
-	font-size: 1.1em;
-}
-
-}
