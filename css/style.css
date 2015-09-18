@@ -169,6 +169,7 @@ header {
     font-family: 'open-sans', helvetica, sans-serif;
     line-height: 1.5em;
     letter-spacing: .1em;
+    margin-left: 5%;
     color: #4C3928; }
   header nav {
     background: #F28179;
