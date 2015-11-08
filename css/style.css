@@ -15,9 +15,8 @@
   padding-bottom: 15px; }
 
 .nav-collapse a {
-  color: #E2CCB7;
-  text-decoration: none;
-  margin-right: 10%; }
+  color: #4C3928;
+  text-decoration: none; }
 
 .js .nav-collapse {
   clip: rect(0 0 0 0);
@@ -39,8 +38,7 @@
   -o-user-select: none;
   user-select: none;
   color: #E2CCB7;
-  text-align: center;
-  padding: 20px 2%;
+  margin: 0 auto;
   display: block;
   text-decoration: none; }
 
@@ -162,19 +160,19 @@ table {
 
 header {
   max-width: 100%;
-  background: #f28179;
   padding-top: 1px; }
   header h2 {
     text-align: center;
     font-family: 'open-sans', helvetica, sans-serif;
     line-height: 1.5em;
-    letter-spacing: .1em;
-    margin-left: 5%;
-    color: #4C3928; }
+    letter-spacing: .1em; }
+  header .row {
+    margin: 0 auto; }
   header nav {
-    background: #F28179;
     width: 100%;
-    margin-left: 5%; }
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 1.5em; }
   header ul {
     text-align: center; }
 
@@ -228,9 +226,6 @@ section {
   margin-left: 20%;
   margin-top: 100px; }
 
-.color {
-  margin-left: 3%; }
-
 .colors p {
   text-align: center; }
 
@@ -242,24 +237,37 @@ section {
   border: 5em solid #67d0f9;
   margin: 3em;
   margin-left: 30%; }
+  .box p {
+    background-color: #67d0f9;
+    color: white;
+    text-transform: uppercase; }
 
 .box1 {
   width: 5%;
   border: 5em solid #4C3928;
   margin: 3em;
   margin-left: 30%; }
+  .box1 p {
+    background-color: #4C3928;
+    color: white; }
 
 .box2 {
   width: 5%;
   border: 5em solid #F28179;
   margin: 3em;
   margin-left: 30%; }
+  .box2 p {
+    background-color: #F28179;
+    color: white; }
 
 .box3 {
   width: 5%;
   border: 5em solid #F6B97C;
   margin: 3em;
   margin-left: 30%; }
+  .box3 p {
+    background-color: #F6B97C;
+    color: white; }
 
 .typography {
   width: 60%;
@@ -297,7 +305,9 @@ section {
     top: 10px; }
 
 .buttons:hover {
-  background: #F4A29B; }
+  background: #F4A29B;
+  cursor: pointer;
+  cursor: hand; }
 
 .process {
   width: 60%;
@@ -308,33 +318,80 @@ section {
   width: 100%;
   border: 5px solid #4C3928; }
 
+.main-sketch {
+  padding-bottom: 100px; }
+
 .sketch {
   width: 100%;
   border: 5px solid #4C3928; }
+
+.sketch1 {
+  width: 100%;
+  border: 5px solid #4C3928; }
+
+.conclusion {
+  width: 60%;
+  margin-left: 20%;
+  padding-top: 50px; }
 
 @media screen and (min-width: 500px) {
   .buttons {
     width: 30%; }
 
-  nav li {
-    float: left;
-    width: 10%;
-    border-bottom: none;
-    height: 50px;
-    line-height: 50px;
-    margin-left: 8.5%; } }
-@media screen and (min-width: 1000px) {
   nav {
-    display: inline-block; }
+    width: 100%; }
 
-  .colors {
+  nav li {
     display: inline-block;
-    margin-left: 38%; }
+    margin: 0 auto;
+    line-height: 50px;
+    padding: 0 40px; } }
+@media screen and (min-width: 1000px) {
+  .colors {
+    width: 100%;
+    text-align: center; }
+
+  .color p {
+    text-align: center; }
+
+  .box {
+    width: 100px;
+    display: inline-block;
+    margin: 100px 10px 10px 0; }
+
+  .box1 {
+    width: 100px;
+    display: inline-block;
+    margin: 10px 10px 10px 0; }
+
+  .box2 {
+    width: 100px;
+    display: inline-block;
+    margin: 10px 10px 10px 0; }
+
+  .box3 {
+    width: 100px;
+    display: inline-block;
+    margin: 10px 10px 10px 0; }
 
   .buttons {
     width: 30%; }
 
+  .typography {
+    clear: both; }
+
+  .main-sketch {
+    width: 100%;
+    display: inline-block; }
+
   .sketch {
-    width: 60%; } }
+    width: 300px;
+    display: inline-block;
+    margin: 20px 20px; }
+
+  .sketch1 {
+    width: 300px;
+    display: inline-block;
+    margin: 20px 5px; } }
 
 /*# sourceMappingURL=style.css.map */
